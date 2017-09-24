@@ -3,7 +3,7 @@ from gensim.models import word2vec
 import re
 
 # テキストファイルの読み込み --- (※1)
-bindata = open('kokoro.txt.sjis', 'rb').read()
+bindata = open('kokoro.txt', 'rb').read()
 text = bindata.decode('shift_jis')
 
 # テキストの先頭にあるヘッダとフッタを削除 --- (※2)
